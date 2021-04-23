@@ -1,0 +1,8 @@
+server:
+  port: 8081
+  servlet:
+    context-path: /resource-server
+    
+spring:
+  security:    oauth2:      resourceserver:        jwt:          issuer-uri: http://localhost:8083/auth/realms/sjl
+          jwk-set-uri: http://localhost:8083/auth/realms/sjl/protocol/openid-connect/certs
